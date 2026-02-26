@@ -1,10 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EIDOLON</title>
+
+  <style>
+    @font-face {
+  font-family: "OCR-A";
+  src: url("./assets/fonts/OCRA.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #000;
+      color: #fff;
+    }
+
+    .wrap {
+      height: 100%;
+      display: grid;
+      place-items: center;
+    }
+
+    .title {
+      font-family: "OCR-A", "OCR A Std", "OCRA", monospace;
+      text-align: center;
+      font-size: clamp(56px, 10vw, 140px);
+      line-height: 1.05;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      user-select: none;
+    }
+
+    /* Pour que ça ressemble encore plus à ton image : un peu d'air */
+    .title span {
+      display: inline-block;
+      padding-left: 0.18em; /* compense le letter-spacing à gauche */
+    }
+  </style>
 </head>
-<body style="background:black; color:white; display:flex; align-items:center; justify-content:center; height:100vh; font-family:sans-serif;">
-  <h1>EIDOLON — Coming Soon</h1>
+
+<body>
+  <div class="wrap">
+    <div class="title">
+      <span>COMING<br>SOON</span>
+    </div>
+  </div>
 </body>
 </html>
